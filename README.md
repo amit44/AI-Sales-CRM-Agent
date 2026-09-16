@@ -295,15 +295,41 @@ Possible future extensions include:
 
 ## 12. Screenshots & Demo
 
-Add the following portfolio assets to this section:
+The following screenshots show the different stages of the AI Sales & CRM Automation Agent workflow.
 
-- Full n8n workflow screenshot
-- Architecture diagram
-- HOT approval screenshot
-- CRM result screenshot
-- WARM lead result screenshot
-- COLD lead result screenshot
-- Short demo video
+### Full Workflow Overview
+
+![AI Sales & CRM Automation Agent - Full Workflow](screenshots/workflow-overview.png)
+
+### 1. Input & Validation
+
+![Input & Validation](screenshots/1-input-validation.png)
+
+The workflow begins by receiving lead information, preparing the input, and validating the required lead data before sending it to the AI qualification stage.
+
+### 2. AI Qualification
+
+![AI Qualification](screenshots/2-ai-qualification.png)
+
+The AI Agent analyzes the lead information and classifies the lead as **HOT, WARM, or COLD** using structured output validation.
+
+### 3. Lead Routing
+
+![Lead Routing](screenshots/3-lead-routing.png)
+
+The Switch node routes the qualified lead into the appropriate HOT, WARM, or COLD sales workflow.
+
+### 4. HOT Lead Approval
+
+![HOT Lead Approval](screenshots/4-hot-lead-approval.png)
+
+HOT leads require human approval before the final CRM status is updated.
+
+### 5. Error Handling
+
+![Error Handling](screenshots/5-error-handling.png)
+
+Dedicated error-handling paths validate failures and send administrator alerts for input, AI, CRM, and email-related errors.
 
 ### Suggested Demo Flow
 
